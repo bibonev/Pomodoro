@@ -23,6 +23,10 @@ body {
   border-bottom: solid 2px #444;
 }
 
+.header img {
+  align-content: left;
+}
+
 .header h1 {
   flex-grow: 1;
   font-size: 1.5em;
