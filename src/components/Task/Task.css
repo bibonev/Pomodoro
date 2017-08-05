@@ -1,0 +1,39 @@
+task {
+  display: flex;
+  font-size: 1.2em;
+  border-bottom: solid 2px #444;
+  letter-spacing: 2px;
+}
+
+  .remove-task {
+    visibility: hidden;
+    margin-right: 10px;
+    color: #e57373;
+    cursor: pointer;
+  }
+
+  .complete-task {
+    visibility: hidden;
+    margin-right: 50px;
+    color: greenyellow;
+    cursor: pointer;
+  }
+
+  .task-name:hover .remove-task {
+    visibility: visible;
+  }
+
+  .task-name:hover .complete-task {
+    visibility: visible;
+  }
+
+  .task-name {
+    flex-grow: 1;
+    padding: 20px 10px 10px 10px;
+  }
+
+  input[type='checkbox'] {
+    margin-left: 10px;
+    margin-bottom: 5px;
+    transform:scale(1.5, 1.5);
+}

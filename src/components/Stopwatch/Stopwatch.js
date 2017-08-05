@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import createReactClass from 'create-react-class';
 
 import './Stopwatch.css';
