@@ -5,15 +5,15 @@ I have written a small web application to help me be more concentrated for longe
 
 In the application you can see two button and one form. 
 
-## Start/Reset button 
+### Start/Reset button 
 
 The button have the ability to control the flow of the stopwatch you can set manually by typing the exact minutes and second you would like your pomodoro session to last
 
-## Form
+### Form
 
 There is a form which is enabled when the stopwatch is not running. Using the form you can actually add tasks. When the stopwathc is running the form is being disabled.
 
-## Tasks
+### Tasks
 
 There is a button on the left and a checkbox on the right of the task. With the X you can remove a task you dont find particularly important during the pomodoro session and with the checkbox, you can cross out a task you completed during the pomodoro session.
 
