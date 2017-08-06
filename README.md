@@ -1,7 +1,21 @@
-This project was created in order to help myself stay concentrated.
 
-I have used React for developing it in order to enhance my skills.
+I have written a small web application to help me be more concentrated for longer period of time. It is based on the famous pomodoro technique whihch I was thought in my first year at university. 
 
+## Usage
+
+In the application you can see two button and one form. 
+
+## Start/Reset button 
+
+The button have the ability to control the flow of the stopwatch you can set manually by typing the exact minutes and second you would like your pomodoro session to last
+
+## Form
+
+There is a form which is enabled when the stopwatch is not running. Using the form you can actually add tasks. When the stopwathc is running the form is being disabled.
+
+## Tasks
+
+There is a button on the left and a checkbox on the right of the task. With the X you can remove a task you dont find particularly important during the pomodoro session and with the checkbox, you can cross out a task you completed during the pomodoro session.
 
 ## Available Scripts
 
@@ -15,27 +29,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
-### `npm test`
+### Notes
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](#running-tests) for more information.
+## Tools
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](#deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+I have used React to develop the application as I wanted to enhance my skills with this library. I have also used <code>create-react-app</code> in order to create the necessery files for development and in the end I have ejected the module.

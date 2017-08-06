@@ -1,11 +1,11 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Pomodoro",
+  "name": "Increase your concentration",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "tomatoe.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "../src/assets/tomatoes.png"
     }
   ],
   "start_url": "./index.html",
