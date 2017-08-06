@@ -21,7 +21,7 @@ var Task = createReactClass({
         }
     },
 
-    render: function (props) {
+    render: function () {
         return (
             <div className="task">
                 <div className="task-name">

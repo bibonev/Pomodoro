@@ -4,6 +4,9 @@ import createReactClass from 'create-react-class';
 import './Stopwatch.css';
 
 var Stopwatch = createReactClass({
+    propTypes: {
+        isClockRunning: React.PropTypes.func.isRequired
+    },
 
     getInitialState: function () {
         return {
@@ -52,10 +55,16 @@ var Stopwatch = createReactClass({
             elapsedTime: time,
             setTime: time
         });
+        this
+            .props
+            .isClockRunning();
     },
 
     onStop: function () {
         this.setState({running: false});
+        this
+            .props
+            .isClockRunning();
     },
 
     onReset: function () {
@@ -79,7 +88,7 @@ var Stopwatch = createReactClass({
                     this.setState({textColor: 'white'});
                 }
             }
-        } else if (Math.floor(this.state.elapsedTime) === 0) {
+        } else if (Math.floor(this.state.elapsedTime) === 0 && this.state.running) {
             this.onStop();
             this.onReset();
         }

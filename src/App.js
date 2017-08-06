@@ -15,7 +15,8 @@ class App extends Component {
 
     this.state = {
       name: "",
-      tasks: []
+      tasks: [],
+      formDisabled: false
     };
   }
 
@@ -41,13 +42,24 @@ class App extends Component {
     this.setState({name: ""});
   }
 
+  isClockRunning() {
+    if (this.state.formDisabled === true) {
+      this.setState({formDisabled: false});
+    } else {
+      this.setState({formDisabled: true});
+    }
+  }
+
   render() {
     return (
       <div className="App">
         <div className="header">
           <img src={tomatoe} width="60" height="60" alt="Tomatoe"/>
           <h1>Pomodoro</h1>
-          <Stopwatch/>
+          <Stopwatch
+            isClockRunning={() => {
+            this.isClockRunning()
+          }}/>
         </div>
         {this
           .state
@@ -66,18 +78,20 @@ class App extends Component {
             } />);
           }.bind(this))}
         <div className="add-task-form">
-          <form onSubmit={this
-            .onSubmit
-            .bind(this)}>
-            <input
-              type="text"
-              value={this.state.name}
-              onChange={this
-              .onNameChange
-              .bind(this)}
-              placeholder="Task's title..."/>
-            <input type="submit" value="Add"/>
-          </form>
+          <fieldset disabled={this.state.formDisabled}>
+            <form onSubmit={this
+              .onSubmit
+              .bind(this)}>
+              <input
+                type="text"
+                value={this.state.name}
+                onChange={this
+                .onNameChange
+                .bind(this)}
+                placeholder="Task's title..."/>
+              <input type="submit" value="Add"/>
+            </form>
+          </fieldset>
         </div>
       </div>
     );
